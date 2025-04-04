@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DOC AI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "assets/css/main.css" />
+        <link rel = "stylesheet" href = "assets/css/utilities.css" />
+        <!-- normalize.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            /* Banner Animation */
+            .banner-content {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUpBanner 1s ease-out forwards;
+            }
+    
+            /* Services Animation */
+            .services-item, .sc-feedback .feedback-item {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUpServices 1s ease-out forwards;
+            }
+    
+            /* Feedback Animation */
+            .sc-feedback .feedback-list {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUpFeedback 1s ease-out forwards;
+            }
+    
+            /* Keyframes for the fade-in animation */
+            @keyframes fadeInUpBanner {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+            @keyframes fadeInUpServices {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+            @keyframes fadeInUpFeedback {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="page-wrapper">
+            <!-- header -->
+            <header class = "header">
+                <nav class = "navbar">
+                    <div class="container">
+                        <div class="navbar-content d-flex justify-content-between align-items-center">
+                            <div class = "brand-and-toggler d-flex align-items-center justify-content-between">
+                                <a href = "#" class = "navbar-brand d-flex align-items-center">
+                                    
+                                    <span class="brand-text fw-7"><img src="./assets/images/doc-ai-high-resolution-logo-transparent (1).png"></img></span>
+                                </a>
+                                <button type = "button" class = "d-none navbar-show-btn">
+                                    <i class = "fas fa-bars"></i>
+                                </button>
+                            </div>
+
+                            <div class = "navbar-box">
+                                <button type = "button" class = "navbar-hide-btn">
+                                    <i class = "fas fa-times"></i>
+                                </button>
+
+                                <ul class = "navbar-nav d-flex align-items-center">
+                                    <li class = "nav-item">
+                                        <a href = "#" class = "nav-link text-white nav-active text-nowrap">Home</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href = "#ourservices" class = "nav-link text-white nav-active text-nowrap">Services</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href = "#profile" class = "nav-link text-white nav-active text-nowrap">Your Profile</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href = "./assets/contactform.html" class = "nav-link text-white nav-active text-nowrap">Contact Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./public/signup.html" class="nav-link text-white nav-active text-nowrap">Login/Signup</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="element-one">
+                    <img src = "assets/images/element-img-1.png" alt = "">
+                </div>
+
+                <div class="banner">
+                    <div class="container">
+                        <div class="banner-content">
+                            <div class="banner-left">
+                                <div class="content-wrapper">
+                                    <h1 class="banner-title">Your Wellness, <br> Our Priority</h1>
+                                    <p class="text text-white">Unlock personalized healthcare insights with our cutting-edge lab tester recommendation system.</p>
+                                    <a href = "http://localhost:8501/" class="btn btn-secondary">Check Health</a>
+                                </div>
+                            </div>
+
+                            <div class = "banner-right d-flex align-items-center justify-content-end">
+                                <img src = "assets/images/banner-image.png" alt = "">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end of header -->
+
+            <main>
+                <div id="ourservices">
+                <section class = "sc-services">
+                    <div class = "services-shape">
+                        <img src = "assets/images/curve-shape-1.png" alt = "">
+                    </div>
+                    <div class="container">
+                        <div class = "services-content">
+                            <div class="title-box text-center">
+                                <div class = "content-wrapper">
+                                    <h3 class = "title-box-name">Our services</h3>
+                                    <div class = "title-separator mx-auto"></div>
+                                    <p class = "text title-box-text">Doc AI, an advanced healthcare technology, employs artificial intelligence to analyze extensive medical data with precision. Facilitating diagnosis and treatment planning, it enhances patient outcomes, streamlines operations, and contributes to ongoing medical advancements through its data-driven approach.</p>
+                                </div>
+                            </div>
+
+                            <div class = "services-list">
+                                <a href="https://www.google.com/maps/d/edit?mid=1S7vhabnFm6zx91h1LRDgKhKrdqpRB8A&usp=sharing">
+                                <div class = "services-item">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-1.png" alt = "service icon">
+                                    </div>
+                                    <h5 class = "item-title fw-7">Find Docs/Labs</h5>
+                                    <p class = "text">Choose your doctor from thousands of specialist, general and trusted hospitals.</p>
+                                    </a>
+                    
+                                </div>
+
+                                <div class = "services-item">
+                                    <a href="http://localhost:8501/">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-2.png" alt = "service icon">
+                                    </div>
+                                    <h5 class = "item-title fw-7" >Check Health</h5>
+                                    <p class = "text">Get yourself checked regularly </p>
+                                    </a>
+                                </div>
+
+                                <div class = "services-item">
+                                    <a href="http://localhost/health.bc/gettest.php">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-3.png" alt = "service icon">
+                                    </div>
+                                    <h5 class = "item-title fw-7">Test Recommendations</h5>
+                                    <p class = "text">Get Accurate Lab Test recommendation based on your Health reports</p>
+                                    </a>
+                                </div>
+
+                                
+                            </div>
+
+                           
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+                <div id="profile">
+                <section class = "sc-grid sc-grid-one">
+                    <div class="container">
+                        <div class = "grid-content d-grid align-items-center">
+                            <div class = "grid-img">
+                                <img src = "assets/images/health-care-img.png" alt = "">
+                            </div>
+                            <div class = "grid-text">
+                                <div class = "content-wrapper text-start">
+                                    <div class = "title-box">
+                                        <h3 class = "title-box-name text-white">
+                                            Build Your Profile </h3>
+                                        <div class = "title-separator mx-auto"></div>
+                                    </div>
+
+                                    <p class = "text title-box-text text-white">This will increase our recommendation precision for you.</p>
+                                    <button type = "button" class = "btn btn-white-outline"><a href="profile.html">Get Started</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+                
+
+                <div id="mobile">
+                <section class = "sc-grid sc-grid-two">
+                    <div class = "container">
+                        <div class = "grid-content d-grid align-items-center">
+                            <div class = "grid-img">
+                                <img src = "assets/images/download-image.png" alt = "">
+                            </div>
+                            <div class = "grid-text">
+                                <div class = "content-wrapper text-start">
+                                    <div class = "title-box">
+                                        <h3 class = "title-box-name">Download our mobile apps</h3>
+                                        <div class = "title-separator mx-auto"></div>
+                                    </div>
+                                    <p class = "text title-box-text">Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
+                                    <button type = "button" class = "btn btn-primary-outline">
+                                        Download
+                                        <img src = "assets/images/arrow-down.svg" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+                
+
+                
+            </main>
+               
+            <footer class = "footer">
+                <div class = "container">
+                    <div class = "footer-content">
+                        <div class = "footer-list d-grid text-white">
+                            <div class = "footer-item">
+                                <a href = "#" class = "navbar-brand d-flex align-items-center">
+                                    <span class="brand-text fw-7"><img src="./assets/images/doc-ai-high-resolution-logo-transparent (1).png"></img></span>
+                                    
+                                </a>
+                                <p class = "text-white">Unlock personalized healthcare insights with our cutting-edge lab tester recommendation system.</p>
+                                <p class = "text-white copyright-text">&copy; Doc AI Pvt LTD 2024. All rights reserved.</p>
+                            </div>
+
+                            <div class = "footer-item">
+                                <h3 class = "footer-item-title">Company</h3>
+                                <ul class = "footer-links">
+                                    <li><a href = "#">About</a></li>
+                                    <li><a href = "#">Health Check</a></li>
+                                    <li><a href = "#">My Profile</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "footer-element-1">
+                    <img src = "assets/images/element-img-4.png" alt = "">
+                </div>
+                <div class = "footer-element-2">
+                    <img src = "assets/images/element-img-5.png" alt = "">
+                </div>
+            </footer>
+        </div>
+        
+    
+
+
+
+
+
+
+        <!-- jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <!-- owl carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- custom js -->
+        <script src = "assets/js/script.js"></script>
+        <style>
+            .chat-container {
+                width: 450px; 
+                height: 600px; 
+                border: 1px solid #ddd;
+                border-radius: 15px; 
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 0 15px rgba(0,0,0,0.15); 
+                font-family: Arial, sans-serif;
+                background-color: white;
+            }
+            
+            .chat-header {
+                background-color: #8E44AD;
+                color: white;
+                padding: 20px; 
+                text-align: center;
+            }
+            
+            .chat-header h3 {
+                font-size: 20px; 
+                margin: 0;
+            }
+            
+            .chat-messages {
+                flex: 1;
+                padding: 20px; 
+                overflow-y: auto;
+                background-color: #f9f9f9;
+            }
+            
+            .message {
+                margin-bottom: 18px; 
+                padding: 12px 18px; 
+                border-radius: 20px; 
+                max-width: 80%;
+                word-wrap: break-word;
+                font-size: 16px; 
+            }
+            
+            .user-message {
+                background-color: #E8F5E9;
+                margin-left: auto;
+                border-bottom-right-radius: 5px;
+            }
+            
+            .bot-message {
+                background-color: #EDE7F6;
+                margin-right: auto;
+                border-bottom-left-radius: 5px;
+            }
+            
+            .chat-input {
+                display: flex;
+                padding: 15px; 
+                background-color: white;
+                border-top: 1px solid #ddd;
+            }
+            
+            #message-input {
+                flex: 1;
+                padding: 12px 15px; 
+                border: 1px solid #ddd;
+                border-radius: 24px; 
+                outline: none;
+                font-size: 16px; 
+            }
+            
+            #send-button {
+                background-color: #8E44AD;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                width: 45px; 
+                height: 45px; 
+                margin-left: 12px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px; 
+            }
+            
+            #send-button:hover {
+                background-color: #7D3C98;
+            }
+            
+            /* Circular chat toggle button */
+            .chat-toggle {
+                position: fixed;
+                bottom: 30px; 
+                right: 30px; 
+                background-color: #8E44AD;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                width: 80px; 
+                height: 80px; 
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
+                z-index: 1000;
+                transition: all 0.3s ease;
+            }
+            
+            .chat-toggle:hover {
+                background-color: #7D3C98;
+                transform: scale(1.05);
+            }
+            
+            .chat-toggle .mind-icon {
+                font-size: 32px; 
+                margin-bottom: 4px;
+            }
+            
+            .chat-toggle .toggle-text {
+                font-size: 12px; 
+                text-align: center;
+            }
+            
+            .chat-widget {
+                position: fixed;
+                bottom: 120px; 
+                right: 30px;
+                display: none;
+                z-index: 1001;
+                transition: all 0.3s ease;
+                animation: fadeIn 0.3s;
+            }
+            
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            
+            .chat-widget.active {
+                display: block;
+            }
+            
+            .disclaimer {
+                font-size: 11px; 
+                color: #777;
+                padding: 8px 15px;
+                text-align: center;
+                border-top: 1px solid #eee;
+            }
+            
+            .close-button {
+                position: absolute;
+                right: 15px;
+                top: 20px;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 20px; 
+                cursor: pointer;
+            }
+        </style>
+        
+        <!-- Mental Health Chatbox HTML -->
+        <button class="chat-toggle" id="chat-toggle">
+            <span class="mind-icon">🧠</span>
+            <span class="toggle-text">Want to talk?</span>
+        </button>
+        
+        <div class="chat-widget" id="chat-widget">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h3>Mental Health Support</h3>
+                    <button class="close-button" id="close-chat">✕</button>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message bot-message">
+                        Hi there! I'm here to listen and provide mental health support. How are you feeling today?
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="message-input" placeholder="Type your message...">
+                    <button id="send-button">➤</button>
+                </div>
+                <div class="disclaimer">
+                    This is an AI assistant. For emergencies, please contact a mental health professional or call a crisis hotline.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mental Health Chatbox JavaScript -->
+        <script>
+    
+            const responses = {
+                greetings: [
+                    "Hello! How are you feeling today?",
+                    "Hi there! I'm here to listen. What's on your mind?",
+                    "Welcome! How can I support you today?"
+                ],
+                anxiety: [
+                    "I understand anxiety can be overwhelming. Have you tried any breathing exercises?",
+                    "Anxiety is common and valid. Would you like to talk about what triggers it for you?",
+                    "I hear you're feeling anxious. Remember to take things one step at a time."
+                ],
+                depression: [
+                    "I'm sorry you're feeling down. Have you been able to talk to anyone about this?",
+                    "Depression can make things seem hopeless, but you're not alone in this.",
+                    "Thank you for sharing that with me. Have you considered speaking with a mental health professional?"
+                ],
+                stress: [
+                    "Stress can be really challenging. What helps you relax?",
+                    "I understand you're under stress. Remember to take breaks and be kind to yourself.",
+                    "Managing stress is important. Have you tried any relaxation techniques recently?"
+                ],
+                sleep: [
+                    "Sleep problems can affect our mental health significantly. Have you established a bedtime routine?",
+                    "I understand sleep troubles can be frustrating. Have you tried limiting screen time before bed?",
+                    "Getting good sleep is important. What's your sleep environment like?"
+                ],
+                general: [
+                    "I appreciate you sharing that with me. How long have you been feeling this way?",
+                    "That sounds difficult. What support do you have in your life right now?",
+                    "I'm here to listen. Would you like to tell me more about that?",
+                    "Your feelings are valid. What might help you feel better right now?",
+                    "Thank you for trusting me with this. Is there something specific you'd like support with?"
+                ],
+                crisis: [
+                    "It sounds like you're going through a really tough time. Please consider reaching out to a crisis helpline or mental health professional who can provide immediate support.",
+                    "I'm concerned about what you've shared. Please remember that help is available. Consider calling a mental health crisis line or speaking with a healthcare provider."
+                ],
+                unsure: [
+                    "I'm not sure I fully understand. Could you tell me more about what you're experiencing?",
+                    "I want to make sure I'm supporting you properly. Could you elaborate on that?",
+                    "I'm here to listen. Feel free to share more when you're comfortable."
+                ]
+            };
+        
+            // Keywords to identify topics
+            const keywords = {
+                greetings: ["hello", "hi", "hey", "greetings"],
+                anxiety: ["anxiety", "anxious", "nervous", "worry", "panic", "fear"],
+                depression: ["depression", "depressed", "sad", "hopeless", "unmotivated", "tired", "exhausted"],
+                stress: ["stress", "stressed", "overwhelmed", "pressure", "burnout"],
+                sleep: ["sleep", "insomnia", "nightmare", "tired", "rest", "bed"],
+                crisis: ["suicide", "kill myself", "end my life", "harm myself", "self-harm", "die"]
+            };
+        
+            // Helper function to get appropriate response
+            function getResponse(message) {
+                const lowercaseMsg = message.toLowerCase();
+                
+                
+                for (const crisisWord of keywords.crisis) {
+                    if (lowercaseMsg.includes(crisisWord)) {
+                        return {
+                            text: responses.crisis[Math.floor(Math.random() * responses.crisis.length)],
+                            category: "crisis"
+                        };
+                    }
+                }
+                
+               
+                for (const category in keywords) {
+                    if (category === "crisis") continue; 
+                    
+                    for (const keyword of keywords[category]) {
+                        if (lowercaseMsg.includes(keyword)) {
+                            return {
+                                text: responses[category][Math.floor(Math.random() * responses[category].length)],
+                                category: category
+                            };
+                        }
+                    }
+                }
+                
+                // Default to general response
+                return {
+                    text: responses.general[Math.floor(Math.random() * responses.general.length)],
+                    category: "general"
+                };
+            }
+        
+            // Get DOM elements
+            const chatToggle = document.getElementById('chat-toggle');
+            const closeChat = document.getElementById('close-chat');
+            const chatWidget = document.getElementById('chat-widget');
+            const chatMessages = document.getElementById('chat-messages');
+            const messageInput = document.getElementById('message-input');
+            const sendButton = document.getElementById('send-button');
+        
+            // Toggle chat widget
+            chatToggle.addEventListener('click', () => {
+                chatWidget.classList.add('active');
+                messageInput.focus();
+            });
+            
+            // Close chat widget
+            closeChat.addEventListener('click', () => {
+                chatWidget.classList.remove('active');
+            });
+        
+            // Send message function
+            function sendMessage() {
+                const message = messageInput.value.trim();
+                if (message === '') return;
+                
+                // Add user message to chat
+                addMessage(message, 'user');
+                messageInput.value = '';
+                
+                // Get and add bot response after a short delay
+                setTimeout(() => {
+                    const response = getResponse(message);
+                    addMessage(response.text, 'bot');
+                    
+                    // If crisis message, add additional resources after another delay
+                    if (response.category === "crisis") {
+                        setTimeout(() => {
+                            addMessage("Here are some resources that might help: National Suicide Prevention Lifeline: 988 or 1-800-273-8255, Crisis Text Line: Text HOME to 741741", 'bot');
+                        }, 1000);
+                    }
+                }, 600);
+            }
+        
+            // Add message to chat
+            function addMessage(text, sender) {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message');
+                messageElement.classList.add(sender + '-message');
+                messageElement.textContent = text;
+                chatMessages.appendChild(messageElement);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+        
+            // Event listeners for sending messages
+            sendButton.addEventListener('click', sendMessage);
+            messageInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+        </script>
+    </body>
+</html>
