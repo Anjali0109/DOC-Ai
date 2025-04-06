@@ -1,36 +1,39 @@
-Doc AI
 
-⚪Overview
+# DOC Ai
 
 Doc AI is a healthcare web application that helps users check for potential diseases based on symptoms and test reports. It also features a mental health chatbot that provides emotional support and guidance. The platform includes lab test recommendations, a map of nearby labs, and AI-based disease prediction for diabetes, heart disease, and Parkinson’s.
 
-Features
-🏥 1. Disease Prediction
 
-Users can check for diabetes, heart disease, and Parkinson's by inputting test report data.
+## Features
 
-Provides lab test recommendations based on symptoms.
+  1.Disease Prediction
 
-🔍 2. Symptom-Based Diagnosis
-Users can enter symptoms to get possible disease predictions.
+➜Users can check for diabetes, heart disease, and Parkinson's by inputting test report data.
 
-Helps in early detection and awareness.
+➜Provides lab test recommendations based on symptoms.
 
-💬 3. Mental Health Chatbot
-Allows users to share their feelings and get AI-generated supportive responses.
+2.Symptom-Based Diagnosis
 
-Recognizes keywords related to anxiety, depression, stress, sleep issues, and crisis situations.
+➜Users can enter symptoms to get possible disease predictions.
 
-Provides crisis hotline recommendations when necessary.
+➜Helps in early detection and awareness.
 
-Interactive chatbot with a floating toggle button for easy access.
+3.Mental Health Chatbot
 
-🏥 4. Find Doctors/Labs
-Choose your doctor from thousands of specialists, general practitioners, and trusted hospitals.
+➜Allows users to share their feelings and get AI-generated supportive responses.
 
-Shows nearby Labs/Doctors with their location.
+➜Recognizes keywords related to anxiety, depression, stress, sleep issues, and crisis situations.
 
-⚪ Technologies Used
+➜Provides crisis hotline recommendations when necessary.
+
+➜Interactive chatbot with a floating toggle button for easy access.
+
+4.Find Doctors/Labs
+
+➜Users can choose doctors from a wide range of specialists, general practitioners, and trusted hospitals.
+
+➜Displays nearby labs and doctors along with their location.
+## Technologies Used
 
 Frontend: HTML, CSS, JavaScript
 
@@ -41,47 +44,43 @@ Mental Health Chatbot: JavaScript-based AI response system
 Maps Integration: Google Maps API
 
 Backend for Chatbot: Streamlit (Python)
+## Installation & Usage
 
-⚪Installation & Usage
+Clone the repository:
 
-📥 Clone the repository:
+```bash
+   https://github.com/Anjali0109/DOC-Ai.git 
+   cd DOC-Ai
+```
+Open the project:
 
-git clone https://github.com/Anjali0109/DOC-Ai.git
-cd DOC-Ai
+index.html in a browser or run it on a local server
 
-🌐 Open the project:
-
-Open index.html in a browser or run it on a local server.
-
-🏃‍♂️ Start the chatbot backend using Streamlit:
-
-streamlit run health.py
-
-💡 How to Use:
+ Start the backend using Streamlit:
+ 
+```bash
+   streamlit run health.py
+```
+## How to Use:
 
 ➜ Enter disease parameters or symptoms to check possible conditions.
 
 ➜Use the mental health chatbot by clicking the floating "Want to talk?" button.
 
-➜Mental Health Chatbot Details:
-Uses keyword-based AI responses to detect emotions and mental health concerns.
+➜Mental Health Chatbot Details: Uses keyword-based AI responses to detect emotions and mental health concerns.
 
 ➜Provides reassuring messages based on user input.
-
-⚪Future Enhancements
+## Future Enhancements
 
 ✅ Database Integration: Store user queries and responses for better analytics.
 
 ✅ Mobile App Version: Expand the platform to mobile applications.
-
-🔴 Disclaimer
+## Disclaimer
 
 This project is an AI-based support system and not a substitute for professional medical advice. For emergencies, always contact a qualified healthcare professional or a crisis hotline.
-
-⚪Contributing
+## Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
-
-⚪License
+## License
 
 This project is licensed under the MIT License.
